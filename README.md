@@ -33,8 +33,8 @@ Les dades disponibles a través del servei són les que es presenten a continuac
 | **PRODUCTE** | **MODALITAT** | **DESCRIPCIO** |
 | --- | --- | --- |
 | **REGISTRE_CIVIL** | NAIXEMENT  | Consulta de naixement.
-|  | MATRIMONI  | Consulta de matrimoni.
-|  | DEFUNCIO  | Consulta de defunció.
+| **REGISTRE_CIVIL** | MATRIMONI  | Consulta de matrimoni.
+| **REGISTRE_CIVIL** | DEFUNCIO  | Consulta de defunció.
 
 Totes les consultes del producte tenen disponible la versió imprimible del resultat de la consulta en
 format PDF. Per més detalls adreceu-vos a l’apartat Extensions de missatgeria del document de
@@ -108,13 +108,15 @@ es tindrà en compte el Grup I.
 /peticioConsultaRegistreCivil/absenciaSegonCognom | <ul><li>true : el titular NO té segon cognom.</li><li>false : el titular té segon cognom.</li></ul>
 
 Grup II (dades registrals)
-
+| _Element_ | _Descripció_ |
+| --- | --- |
 /peticioConsultaRegistreCivil/dadesRegistrals/registreCivil | Codi de registre civil (composat per dígits). Vegeu RRCC_INFORMATIZADOS.xlsx i RRCC_CONSULADOS.xlsx.
 /peticioConsultaRegistreCivil/dadesRegistrals/tom | Identificador de Tomo o Llibre del Registre.
 /peticioConsultaRegistreCivil/dadesRegistrals/pagina | Foli o pàgina del Registre.
 
 Grup III (altres dades)
-
+| _Element_ | _Descripció_ |
+| --- | --- |
 /peticioConsultaRegistreCivil/altresDades/poblacioFetRegistral | <ul><li>Codi INE (5 dígits).</li><li>En cas de consolats: 00 + codi de consolat (vegeu RRCC_CONSULADOS.xlsx).</li></ul>
 /peticioConsultaRegistreCivil/altresDades/dataNaixement | Data de naixement (AAAA-MM-DD).
 /peticioConsultaRegistreCivil/altresDades/poblacioNaixement | <ul><li>Codi INE (5 dígits).</li><li>En cas de consolats: 00 + codi de consolat (vegeu RRCC_CONSULADOS.xlsx).</li></ul>
@@ -147,8 +149,7 @@ https://idapadron.ine.es/ape403expl/inicio.menu
 //resposta/dadesConjuges | Bloc de dades corresponent a les dades dels cònjuges (només consulta de matrimoni).
 //resposta/dadesConjuges/conjuge | Bloc de dades corresponent a les dades d’un cònjuge (només consulta de matrimoni). Vegeu següent apartat.
 //resposta/dadesProgenitors | Bloc de dades corresponent a les dades dels progenitor (només consulta de naixement).
-//resposta/dadesConjuges/progenitor | 
-Bloc de dades corresponent a les dades d’un progenitor (només consulta de naixement). Vegeu següent apartat.
+//resposta/dadesConjuges/progenitor | Bloc de dades corresponent a les dades d’un progenitor (només consulta de naixement). Vegeu següent apartat.
 //resposta/dataConfirmacio | Data de generació de la resposta (AAAA-MM-DD).
 /respostaConsultaRegistreCivil/resultat/codiResultat | <ul><li>0003 : titular localitzat.</li><li>0005 : titular NO localitzat.</li><li>0006 : més d’un titular amb les dades proporcionades.</li><li>0502 : error realitzant la resposta.</li></ul>
 /respostaConsultaRegistreCivil/resultat/descripcio | Descripció del resultat.
@@ -191,7 +192,6 @@ NIF | 07568567A | JESU | CHIU | CHIU | 2011-10-24 | false | | | | | |
 
 Pasaport | 232323 | BUENO | CARACOLO | 2011-10-24 |false
 Pasaport | 12164948 | JUSTINIANO | GONZALEZ | CRESPO | 02/02/2010 | false | 140154600111 | 00001 | 125
-
 NIF | 77508907B | MARTA | DELATA | TIMO | 24/10/2011 | false Carcabuey | 10/10/1980 | Carcabuey
 JUSTINIANO | GONZALEZ | CRESPO | 02/02/2010 | false | 140154600111 | 00001 | 125
 NIF | 51452555Z | JUAN | CARLOS | SEVILLA | FERNANDEZ | 1990-03-25 | false | 090596200111 | 00001 | 109
